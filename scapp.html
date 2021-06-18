@@ -40,11 +40,15 @@
         <!-- maximum number of characters that this element can contain -->
         <editbox minlength="4" maxlength="8" type="text" />
 
+        <!-- declares that element is diabled -->
         <editbox disabled />
+
+        <!-- declares that element is allowed to have a null value -->
         <editbox nullable />
+
         <!-- declares that element is read only -->
         <editbox readonly />
-        
+
         <input|password placeholder="Enter your password" password-char="*" />
         <!-- https://github.com/c-smile/sciter-js-sdk/blob/main/docs/md/behaviors/behavior-masked-edit.md -->
         <input|masked mask="(###) ### - ####" />
