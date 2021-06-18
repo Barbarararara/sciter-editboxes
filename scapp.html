@@ -32,13 +32,19 @@
         <editbox size="15" />
 
         <!-- limits set of characters allowed to input in the field. filter-expr string accepts single characters and character ranges. Example: ".@09azA~Z" - all alpha-numeric characters, '.' and '@'. If you just want to exclude some characters then you can prepend filter with '^' sign. So this filter="^.,-" filter will allow to input any character except '.', ',' and '-' -->
-        <editbox filter="a~z" spellcheck="yes" />
+        <editbox filter="a~z"/>
+
+        <!-- enables spell checking in the element -->
+        <editbox spellcheck="yes" />
 
         <!-- maximum number of characters that this element can contain -->
-        <editbox placeholder="With maxlength" minlength="4" maxlength="8" type="text" />
+        <editbox minlength="4" maxlength="8" type="text" />
 
-        <editbox placeholder="Disabled" disabled />
-        <editbox nullable placeholder="Nullable" />
+        <editbox disabled />
+        <editbox nullable />
+        <!-- declares that element is read only -->
+        <editbox readonly />
+        
         <input|password placeholder="Enter your password" password-char="*" />
         <!-- https://github.com/c-smile/sciter-js-sdk/blob/main/docs/md/behaviors/behavior-masked-edit.md -->
         <input|masked mask="(###) ### - ####" />
