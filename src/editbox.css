@@ -60,6 +60,15 @@ main {
     margin-bottom: 10dip;
 }
 
+.vbox {
+    width: *;
+
+    flow: vertical;
+    border-spacing: 1.0em;
+
+    margin-bottom: 10dip;
+}
+
 editbox {
     width: 100dip;
 }

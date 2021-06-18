@@ -1,7 +1,7 @@
 <html
     window-resizable="true"
     window-width="600dip"
-    window-height="400dip"
+    window-height="600dip"
 >
 <head>
 <title>sciter editboxes demo</title>
@@ -19,10 +19,27 @@
         <editbox placeholder="Disabled" disabled />
         <button #browse>Button</button>
     </div>
-    <label for="example">Name (4 to 8 characters):</label>
+    <div .vbox>
+        <label for="example">Name (4 to 8 characters):</label>
+        <editbox #example placeholder="With a label" />   
+    </div>
 
-    <editbox type="text" id="example" name="example" required
-       minlength="4" maxlength="8" />    
+    <editbox placeholder="With maxlength" minlength="4" maxlength="8" type="text" />
+
+    <div .vbox>
+        <p>editbox</p>
+        <editbox value="with a value" filter="a~z" spellcheck="yes" />
+        <editbox placeholder="input text here" />
+        <editbox nullable placeholder="nullable" />
+        <input|password placeholder="Enter your password" password-char="*" />
+        <!-- https://github.com/c-smile/sciter-js-sdk/blob/main/docs/md/behaviors/behavior-masked-edit.md -->
+        <input|masked mask="(###) ### - ####" />
+        <!-- not working
+        <input type="currency" placeholder="currency" />
+        <input type="url" placeholder="url" />
+        -->
+    </div>
+
     <plaintext #logger />
 </body>
 </html>
