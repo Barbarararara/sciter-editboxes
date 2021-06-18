@@ -56,8 +56,6 @@ main {
 
     flow: horizontal;
     border-spacing: 1.0em;
-
-    margin-bottom: 10dip;
 }
 
 .vbox {
@@ -65,12 +63,12 @@ main {
 
     flow: vertical;
     border-spacing: 1.0em;
-
-    margin-bottom: 10dip;
 }
 
 editbox {
     width: 100dip;
+
+    margin-bottom: 10dip;
 }
 
 label {
