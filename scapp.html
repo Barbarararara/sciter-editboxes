@@ -1,0 +1,25 @@
+<html
+    window-resizable="true"
+    window-width="600dip"
+    window-height="400dip"
+>
+<head>
+<title>sciter editboxes demo</title>
+<style src="src/editbox.css" />
+
+<script src="js/logger.js" />
+
+
+</head>
+<body>
+    <div .hbox>
+        <editbox placeholder="Default" />
+        <button #browse>Button</button>
+    </div>
+    <div .hbox>
+        <editbox placeholder="Disabled" disabled />
+        <button #browse>Button</button>
+    </div>    
+    <plaintext #logger />
+</body>
+</html>

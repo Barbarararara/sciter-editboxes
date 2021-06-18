@@ -1,0 +1,83 @@
+html {
+    display: block;
+    flow: vertical;
+    overflow:hidden;
+}
+
+body {
+    margin: 0;
+    size: *;
+
+    overflow:none;
+
+    flow: vertical;
+
+    padding: 10dip;
+
+    background: white;
+
+    color: rgb(100,100,100);
+}
+
+header {
+    display: block;
+    flow: horizontal;
+
+    width: *;
+    height: max-content;
+}
+
+header > span {
+    height: *;
+    width: *;
+
+    vertical-align: middle;
+    font-size: 12dip;
+}
+
+header > window-button#close {
+    display: inline-block;
+
+    margin-left: *;
+    margin-right: 0;
+}
+
+main {
+    flow: horizontal;
+
+    size: *;
+
+    margin: 0;
+}
+
+
+.hbox {
+    width: *;
+
+    flow: horizontal;
+    border-spacing: 1.0em;
+
+    margin-bottom: 10dip;
+}
+
+editbox {
+    width: 100dip;
+}
+
+/* edit */
+/* create new ruleset std-edit2 based on std-edit set */
+@set std-edit2 < std-edit {
+    :root {
+        display: block;
+    }
+}
+
+/* create new control editbox that uses std-edit ruleset */
+editbox {
+    style-set: std-edit2;
+}
+
+plaintext#logger {
+    margin-top: *;
+    height: 60dip;
+}
