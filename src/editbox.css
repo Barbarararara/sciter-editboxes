@@ -69,6 +69,8 @@ editbox {
 @set std-edit2 < std-edit {
     :root {
         display: block;
+
+        height: 1.6em;
     }
 }
 
