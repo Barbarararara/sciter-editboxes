@@ -64,6 +64,10 @@ editbox {
     width: 100dip;
 }
 
+label {
+    width: *;
+}
+
 /* edit */
 /* create new ruleset std-edit2 based on std-edit set */
 @set std-edit2 < std-edit {

@@ -9,7 +9,6 @@
 
 <script src="js/logger.js" />
 
-
 </head>
 <body>
     <div .hbox>
@@ -19,7 +18,11 @@
     <div .hbox>
         <editbox placeholder="Disabled" disabled />
         <button #browse>Button</button>
-    </div>    
+    </div>
+    <label for="example">Name (4 to 8 characters):</label>
+
+    <editbox type="text" id="example" name="example" required
+       minlength="4" maxlength="8" />    
     <plaintext #logger />
 </body>
 </html>
