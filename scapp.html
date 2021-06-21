@@ -17,44 +17,44 @@
             
             <!-- provides a label for a specific editbox -->
             <label for="example">I'm a label!</label>
-            <editbox #example placeholder="I have a label" />   
+            <editbox #example placeholder="label on the top" />   
 
             <!-- adds a button next to an editbox -->
             <div .hbox>
-                <editbox placeholder="Default" />
+                <editbox placeholder="button next to me" />
                 <button>Button</button>
             </div>
 
             <!-- provides the initial value of the input element -->
-            <editbox value="With a value" />
+            <editbox value="value" />
 
             <!-- if textbox is empty then it shows text provided by the novalue attribute. You can style this state by using :empty CSS selector -->
-            <editbox novalue="I have novalue attribute" />
+            <editbox novalue="novalue" />
 
             <!-- determines value of (intrinsic and default) width of the element -->
-            <editbox size="15" placeholder="Size 15"/>
+            <editbox size="15" placeholder="size" />
         </div>
 
         <div .vbox>
             <p>Complexe editboxes</p>
-            
+
             <!-- limits set of characters allowed to input in the field. filter-expr string accepts single characters and character ranges. Example: ".@09azA~Z" - all alpha-numeric characters, '.' and '@'. If you just want to exclude some characters then you can prepend filter with '^' sign. So this filter="^.,-" filter will allow to input any character except '.', ',' and '-' -->
-            <editbox filter="a~z"/>
+            <editbox filter="a~z" placeholder="filter" />
 
             <!-- enables spell checking in the element -->
-            <editbox spellcheck="yes" />
+            <editbox spellcheck="yes" placeholder="spellcheck" />
 
             <!-- maximum number of characters that this element can contain -->
-            <editbox minlength="4" maxlength="8" type="text" />
+            <editbox minlength="4" maxlength="8" placeholder="min and maxlength" />
 
             <!-- declares that element is diabled -->
-            <editbox disabled />
+            <editbox disabled placeholder="disabled" />
 
             <!-- declares that element is allowed to have a null value -->
-            <editbox nullable />
+            <editbox nullable placeholder="nullable" />
 
             <!-- declares that element is read only -->
-            <editbox readonly />
+            <editbox readonly placeholder="read only" />
 
             <!-- provides a way to securely enter a password -->
             <input|password placeholder="Enter your password" password-char="*" />
