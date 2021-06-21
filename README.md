@@ -1,14 +1,11 @@
-# sciter dialogs
+# sciter editboxes
 
 This project implements modal dialogs for [sciter.js](https://sciter.com/).
-
-![sciter dialogs screenshot](screenshot.png)
 
 ## features
 
 - modal dialog with icon
 - skinnable
-- help button opens external link
 - translatable using callback
 
 ## demo
@@ -23,21 +20,3 @@ This project implements modal dialogs for [sciter.js](https://sciter.com/).
 
 - add the `src` dir to your project
 - then in your code
-
-```
-<script type="module">
-
-import {showDialog} from "src/dialog.js";
-
-let value = showDialog("question", "Do you want to update widget?", "yes no cancel");
-```
-
-# todo
-
-- add don't show again checkbox
-- set tab focus on first button
-- add keyboard shortcuts to buttons &#818;
-
-# known issues
-
-- fix fontawesome css include
