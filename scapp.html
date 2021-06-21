@@ -58,16 +58,18 @@
             <editbox readonly placeholder="read only" />
 
             <!-- provides a way to securely enter a password -->
-            <input|password placeholder="Enter your password" password-char="*" />
+            <editbox|password placeholder="Enter your password" password-char="*" />
+
+            <!-- date type in DD/MM/YYYY format -->
+            <input|date />
+
+            <!-- time type in HH:MM:SS format -->
+            <input|time />
             
             <!-- defines the structure of masked input
             Note: paddings are added by ux-master.css  
             More info on https://github.com/c-smile/sciter-js-sdk/blob/main/docs/md/behaviors/behavior-masked-edit.md -->
             <input|masked mask="+7 (###) ### - ####" />
-
-            <input|date />
-
-            <input|time />
         </div>
     </div>   
 

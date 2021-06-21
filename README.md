@@ -1,6 +1,6 @@
 # sciter editboxes
 
-This project implements modal dialogs for [sciter.js](https://sciter.com/).
+This project show different types of editboxes (inputs) for [sciter.js](https://sciter.com/).
 
 ## features
 
