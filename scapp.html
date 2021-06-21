@@ -14,21 +14,22 @@
     <div .hbox>
         <div .vbox>
             <p>Simple editboxes</p>
-            <!-- More info on https://github.com/c-smile/sciter-js-sdk/blob/main/docs/md/behaviors/behavior-masked-edit.md -->
+            
+            <!-- provides a label for a specific editbox -->
+            <label for="example">I'm a label!</label>
+            <editbox #example placeholder="I have a label" />   
 
+            <!-- adds a button next to an editbox -->
             <div .hbox>
                 <editbox placeholder="Default" />
                 <button>Button</button>
             </div>
 
-            <label for="example">Name (4 to 8 characters):</label>
-            <editbox #example placeholder="With a label" />   
-
-            <!-- initial value of the input element -->
+            <!-- provides the initial value of the input element -->
             <editbox value="With a value" />
 
             <!-- if textbox is empty then it shows text provided by the novalue attribute. You can style this state by using :empty CSS selector -->
-            <editbox placeholder="Input text here" />
+            <editbox novalue="I have novalue attribute" />
 
             <!-- determines value of (intrinsic and default) width of the element -->
             <editbox size="15" placeholder="Size 15"/>
@@ -36,6 +37,7 @@
 
         <div .vbox>
             <p>Complexe editboxes</p>
+            
             <!-- limits set of characters allowed to input in the field. filter-expr string accepts single characters and character ranges. Example: ".@09azA~Z" - all alpha-numeric characters, '.' and '@'. If you just want to exclude some characters then you can prepend filter with '^' sign. So this filter="^.,-" filter will allow to input any character except '.', ',' and '-' -->
             <editbox filter="a~z"/>
 
@@ -57,7 +59,8 @@
             <!-- provides a way to securely enter a password -->
             <input|password placeholder="Enter your password" password-char="*" />
             
-            <!-- defines the structure of masked input -->
+            <!-- defines the structure of masked input
+            More info on https://github.com/c-smile/sciter-js-sdk/blob/main/docs/md/behaviors/behavior-masked-edit.md -->
             <input|masked mask="+7 (###) ### - ####" />
 
             <input|date />
