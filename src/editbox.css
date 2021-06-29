@@ -71,6 +71,15 @@ editbox {
     margin-bottom: 10dip;
 }
 
+.styled {
+    background: blueviolet !important;
+    border: 3px solid yellow !important;
+}
+
+.styled:empty {
+    color: #fff !important;
+}
+
 label {
     width: *;
 }
